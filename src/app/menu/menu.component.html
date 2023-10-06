@@ -1,19 +1,9 @@
-<div class="header-frame header-frame-absolute  row">
+<div class="header-frame header-frame-absolute row">
     <header class="header header-inline min-h-3 row desktop-12 container" role="banner">
 
-        <div class="site-logo">
-            <h1><a href="/" rel="home">Eventex</a></h1>
-            <p class="site-description screen-reader-only">O maior encontro hacker do mundo!</p>
-        </div>
+        <app-banner></app-banner>
 
-        <nav class="nav-inline" role="navigation">
-            <a href="javascript:void(0);" class="nav-mobile"><i class="fa fa-bars"></i></a>
-            <ul>
-                <li *ngFor="let item of itens">
-                    <a data-scroll  href="{{item.link}}">{{item.nome}}</a>
-                </li>
-            </ul>
-        </nav>
+        <app-navegacao></app-navegacao>
 
     </header>
 </div>

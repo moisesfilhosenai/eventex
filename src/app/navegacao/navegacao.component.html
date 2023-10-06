@@ -1,0 +1,8 @@
+<nav class="nav-inline" role="navigation">
+    <a href="javascript:void(0);" class="nav-mobile"><i class="fa fa-bars"></i></a>
+    <ul>
+        <li *ngFor="let item of itens">
+            <a [routerLink]="item.link" fragment="{{item.fragment}}">{{item.nome}}</a>
+        </li>
+    </ul>
+</nav>

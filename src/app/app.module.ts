@@ -9,6 +9,10 @@ import { PalestrantesComponent } from './palestrantes/palestrantes.component';
 import { PatrocinadoresComponent } from './patrocinadores/patrocinadores.component';
 import { RegistroComponent } from './registro/registro.component';
 import { LocalComponent } from './local/local.component';
+import { PalestrasComponent } from './palestras/palestras.component';
+import { BannerComponent } from './banner/banner.component';
+import { NavegacaoComponent } from './navegacao/navegacao.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +22,11 @@ import { LocalComponent } from './local/local.component';
     PalestrantesComponent,
     PatrocinadoresComponent,
     RegistroComponent,
-    LocalComponent
+    LocalComponent,
+    PalestrasComponent,
+    BannerComponent,
+    NavegacaoComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
