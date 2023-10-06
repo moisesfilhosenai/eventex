@@ -9,12 +9,9 @@
         <nav class="nav-inline" role="navigation">
             <a href="javascript:void(0);" class="nav-mobile"><i class="fa fa-bars"></i></a>
             <ul>
-                <li><a data-scroll href="#overview">Conferência</a></li>
-                <li><a data-scroll href="palestras.html">Palestras</a></li>
-                <li><a data-scroll href="#speakers">Palestrantes</a></li>
-                <li><a data-scroll href="#sponsors">Patrocinadores</a></li>
-                <li><a data-scroll href="#register">Inscrição</a></li>
-                <li><a data-scroll href="#venue">Local</a></li>
+                <li *ngFor="let item of itens">
+                    <a data-scroll  href="{{item.link}}">{{item.nome}}</a>
+                </li>
             </ul>
         </nav>
 
